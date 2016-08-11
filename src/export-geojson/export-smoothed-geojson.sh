@@ -9,7 +9,7 @@ function export_geojson() {
     PGDATABASE="$POSTGRES_ENV_POSTGRES_DB" \
     PGUSER="$POSTGRES_ENV_POSTGRES_USER" \
     PGPASSWORD="$POSTGRES_ENV_POSTGRES_PASSWORD" \
-    npm start
+    node export-smoothed-geojson > "/data/smoothed-lake-lines.geojson"
 }
 
 export_geojson

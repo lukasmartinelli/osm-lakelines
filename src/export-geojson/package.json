@@ -9,7 +9,9 @@
   "author": "lukasmartinelli",
   "license": "MIT",
   "dependencies": {
+    "turf": "^3.0.14",
     "JSONStream": "^1.1.4",
+    "geojson-stream": "0.0.1",
     "pg": "^6.0.4",
     "pg-query-stream": "^1.0.0",
     "q": "^1.4.1",

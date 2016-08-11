@@ -11,8 +11,14 @@ import-osm:
   links:
    - postgres:postgres
   volumes:
-   - ./import:/data
+   - ./data:/data
 db-schema:
   build: src/db-schema
   links:
    - postgres:postgres
+export-geojson:
+  build: src/export-geojson
+  links:
+   - postgres:postgres
+  volumes:
+   - ./data:/data
