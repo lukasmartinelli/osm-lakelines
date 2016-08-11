@@ -1,0 +1,18 @@
+postgres:
+  build: src/postgres
+  ports:
+   - "5432:5432"
+  environment:
+    POSTGRES_DB: lakelines
+    POSTGRES_USER: lakelines
+    POSTGRES_PASSWORD: lakelines
+import-osm:
+  build: src/import-osm
+  links:
+   - postgres:postgres
+  volumes:
+   - ./import:/data
+db-schema:
+  build: src/db-schema
+  links:
+   - postgres:postgres

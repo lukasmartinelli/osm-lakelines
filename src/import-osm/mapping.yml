@@ -1,0 +1,13 @@
+tables:
+  lake_polygon:
+    fields:
+    - name: osm_id
+      type: id
+    - name: geometry
+      type: validated_geometry
+    - name: area
+      type: pseudoarea
+    mapping:
+      water:
+      - lake
+    type: polygon
