@@ -7,6 +7,9 @@ tables:
       type: validated_geometry
     - name: area
       type: pseudoarea
+    - name: name
+      key: name
+      type: string
     mapping:
       water:
       - lake
