@@ -1,6 +1,6 @@
 # OpenStreetMap Lake Labels
 
-<img align="right" alt="Lake center lines for labels" width="180" src="lakelines.png" />
+<img align="right" alt="Lake center lines for labels" width="250" src="lakelines.png" />
 
 Calculate nice centered linestrings for labelling lake polygons.
 This repository provides downloadable Shapefiles containing center lines for lake polygons
