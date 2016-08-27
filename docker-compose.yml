@@ -11,7 +11,7 @@ import-osm:
   links:
    - postgres:postgres
   volumes:
-   - ./data:/data
+   - ./data:/import
 export-shapefile:
   build: src/export-shapefile
   links:

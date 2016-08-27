@@ -20,9 +20,6 @@ ENV IMPORT_DATA_DIR=/import \
     IMPOSM_CACHE_DIR=/cache \
     MAPPING_YAML=/usr/src/app/mapping.yml
 
-# Bake the OSM data source into the Docker container
-RUN wget -P "$IMPORT_DATA_DIR" --quiet http://download.geofabrik.de/europe/switzerland-latest.osm.pbf
-
 WORKDIR /usr/src/app
 COPY . /usr/src/app/
 
