@@ -18,3 +18,9 @@ export-shapefile:
    - postgres:postgres
   volumes:
    - ./data:/data
+calculate-centerlines:
+  build: src/calculate-centerlines
+  links:
+   - postgres:postgres
+  volumes:
+   - ./data:/data
