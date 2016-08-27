@@ -1,23 +1,19 @@
 postgres:
-  build: src/postgres
+  image: mdillon/postgis:9.5
   ports:
    - "5432:5432"
   environment:
-    POSTGRES_DB: lakelines
-    POSTGRES_USER: lakelines
-    POSTGRES_PASSWORD: lakelines
+    POSTGRES_DB: osm
+    POSTGRES_USER: osm
+    POSTGRES_PASSWORD: osm
 import-osm:
   build: src/import-osm
   links:
    - postgres:postgres
   volumes:
    - ./data:/data
-db-schema:
-  build: src/db-schema
-  links:
-   - postgres:postgres
-export-geojson:
-  build: src/export-geojson
+export-shapefile:
+  build: src/export-shapefile
   links:
    - postgres:postgres
   volumes:
