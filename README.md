@@ -1,5 +1,7 @@
 # OpenStreetMap Lake Labels
 
+> :warning: This repository is no longer actively maintained by Lukas Martinelli.
+
 <img align="right" alt="Lake center lines for labels" width="250" src="lakelines.png" />
 
 Calculate nice centered linestrings for labelling lake polygons.
